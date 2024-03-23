@@ -2,9 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maket 1.4</title>
     <link rel="stylesheet" href="assets/css/normalize/normalize.css">
     <link rel="stylesheet" href="assets/css/normalize/reset/reset.css">
@@ -16,20 +14,20 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__wrap">
-                <button type="button" class="header__close-btn round-icon" aria-label="Закрыть"></button>
+                <button type="button" class="header__close-btn button round-icon" aria-label="Закрыть"></button>
                 <div class="logo">
-                    <a href="index.html" aria-label="Посетить сайт компании" class="logo__link">
+                    <a href="#" aria-label="Посетить сайт компании" class="logo__link">
                         <img src="assets/images/Group.svg" alt="logo" class="logo__image">
                     </a>
                 </div>
             </div>
-            <button type="button" class="header__search-btn round-icon" aria-label="Поиск"></button>
+            <button type="button" class="header__search-btn button round-icon" aria-label="Поиск"></button>
         </header>
 
         <div class="wrapper__wrap wrapper">
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link nav__link-active">Ремонт техники</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--actived">Ремонт техники</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Услуги и сервисы</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Корпоративным клиентам</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Продавцам техники</a></li>
@@ -39,6 +37,7 @@
                     <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
+
 
             <footer class="footer">
                 <div class="footer__top">
@@ -54,17 +53,23 @@
                     </nav>
                 </div>
 
-                <footer class="footer__bottom">
+                <div class="footer__bottom">
                     <div class="contact-info">
                         <p><a href="mailto:mail@cps.com" class="contact-info__email">mail@cps.com</a></p>
-                        <p><a href="tel:8 800 890 8900" class="contact-info__phone">8 800 890 8900</a></p>
+                        <p><a href="tel:88008908900" class="contact-info__phone">8 800 890 8900</a></p>
                     </div>
                     <div class="language-selector">
-                        <button class="language-selector__button">RU</button>
-                        <button class="language-selector__button">EN</button>
-                        <button class="language-selector__button">CN</button>
+                        <button class="language-selector__button-language button button-language  button-language--actived"
+                                aria-label="Выбрать русский язык">RU
+                        </button>
+                        <button class="language-selector__button-language button button-language"
+                                aria-label="Выбрать английский язык">EN
+                        </button>
+                        <button class="language-selector__button-language button button-language"
+                                aria-label="Выбрать китайский язык">CN
+                        </button>
                     </div>
-                </footer>
+                </div>
 
             </footer>
         </div>
