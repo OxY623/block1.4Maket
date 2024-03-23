@@ -1,13 +1,96 @@
 .fixed-block {
     position: fixed;
     left: 0;
-    top:0;
+    top: 0;
     width: 320px;
-    min-height: 100vh;
-    max-height: 1024px;
-    background-color: #f2f2f2;
-    /*padding: 20px;*/
+    height: auto;
+    /*background-color: #f2f2f2;*/
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),-2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    background: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+
 }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/*HEADER*/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 24px;
+}
+
+.header__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16.73px;
+}
+
+.round-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header__close-btn {
+    background: url(../images/burger.svg) no-repeat center;
+}
+
+.header__search-btn {
+    background: url(../images/search.svg) no-repeat center;
+}
+
+.menu__link--call {
+    background: url("../images/chat copy.svg") no-repeat center;
+}
+
+.menu__link--write {
+    background: url(../images/chat.svg) no-repeat center;
+}
+
+.menu__link--login {
+    background: url(../images/profile.svg) no-repeat center;
+}
+
+/*NAVIGATION&FOOTER*/
+.wrapper__wrap {
+    padding: 46px 0 32px 24px;
+}
+
+.nav__link {
+    display: inline-block;
+    color: rgb(27, 28, 33);
+    font-weight: 500;
+    line-height: 24px;
+    padding: 8px 0;
+    transition: transform 0.2s ease;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    color: rgb(27, 28, 33);
+}
+
+.nav__link:hover {
+    transform: scale(1.1);
+}
+
+
+
 
 /*.btn {*/
 /*    display: block;*/
